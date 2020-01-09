@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CSS grid</title>
+    <style>
+        .wrapper {
+            display: grid;
+            grid-template-columns: 30% 60% 10%;
+            /* grid-column-gap: 1rem;
+            grid-row-gap: 1rem; */
+            grid-gap:1rem
+        }
+        .wrapper > div {
+            background-color: #ddd;
+            padding:1rem;
+        }
+        .wrapper > div:nth-child(odd) {
+            background-color: #eee;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit, modi delectus dignissimos tempore quas accusantium commodi consequatur ullam rerum minus perferendis, laborum possimus excepturi iusto atque dicta laudantium, rem quis. Dicta delectus, ratione a exercitationem quos excepturi est accusamus, magni autem deserunt maiores itaque placeat earum quasi non harum, quis neque laudantium! Voluptates sequi magnam animi asperiores eum porro, praesentium fuga nemo incidunt hic dignissimos, corporis voluptas et. Ex debitis hic doloribus atque quia inventore pariatur ea provident labore porro?</div>
+        <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat non perspiciatis unde dignissimos numquam ducimus laborum consectetur perferendis sunt amet facilis, asperiores commodi ad ipsam nulla corporis blanditiis, aliquid, possimus mollitia repellendus eaque sapiente autem neque animi. Modi, aut ex.</div>
+        <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit, modi delectus dignissimos tempore quas accusantium commodi consequatur ullam rerum minus perferendis, laborum possimus excepturi iusto atque dicta laudantium, rem quis. Dicta delectus, ratione a exercitationem quos excepturi est accusamus, magni autem deserunt maiores itaque placeat earum quasi non harum, quis neque laudantium! Voluptates sequi magnam animi asperiores eum porro, praesentium fuga nemo incidunt hic dignissimos, corporis voluptas et. Ex debitis hic doloribus atque quia inventore pariatur ea provident labore porro?</div>
+        <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat non perspiciatis unde dignissimos numquam ducimus laborum consectetur perferendis sunt amet facilis, asperiores commodi ad ipsam nulla corporis blanditiis, aliquid, possimus mollitia repellendus eaque sapiente autem neque animi. Modi, aut ex.</div>
+    </div>
+</body>
+</html>
